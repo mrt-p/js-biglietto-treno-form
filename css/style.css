@@ -1,0 +1,117 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #B91450;
+  align-items: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+h5 {
+  color: #B91450;
+  text-align: center;
+}
+
+.calcolo_prezzo {
+  width: 80%;
+  background-color: white;
+  box-shadow: 1px 1px 15px 2px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.inserimento_dati {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.conferma_dati {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.genera, .annulla {
+  margin: 0 20px;
+}
+.genera button, .annulla button {
+  color: #B91450;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.genera button:focus, .annulla button:focus {
+  background-color: grey;
+  color: white;
+  border-radius: 2px solid black;
+}
+
+input {
+  border: 2px solid #B91450;
+  border-radius: 5px;
+  font-weight: normal;
+  text-align: center;
+}
+input:focus, select:focus {
+  background-color: #B91450;
+  color: white;
+  border-color: black;
+}
+
+select {
+  border: 2px solid #B91450;
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: normal;
+}
+
+.creazione_biglietto {
+  width: 80%;
+  background-color: white;
+  display: block;
+}
+
+.dettaglio_passeggeri_title {
+  margin-left: 20px;
+}
+
+.dettaglio_passeggeri {
+  margin: 20px;
+  display: flex;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+tr, th, td {
+  padding: 20px;
+}
+
+#th_grey, #nome {
+  background-color: grey;
+  font-weight: bold;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="inserimento_dati_title">
+      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    </div>
+    <div class="calcolo_prezzo">
+      <div class="inserimento_dati">
+        <div class="nome_cognome">
+          <h5> Nome Cognome </h5>
+          <input type="text" name="nome" value="" id="nomecognome" placeholder="Inserisci il tuo nome">
+        </div>
+        <div class="numero_km">
+          <h5>Km da percorrere</h5>
+          <input type="number" name="km" value="" min="1" id="km" placeholder="Inserisci i km">
+        </div>
+        <div class="eta">
+          <h5>Fascia d'età</h5>
+          <select class="eta" name="eta" id="eta">
+            <option value="minorenne" id="minorenne">Minorenne</option>
+            <option value="maggiorenne" id="maggiorenne">Maggiorenne</option>
+            <option value="over65" id="over65">Over 65</option>
+          </select>
+        </div>
+      </div>
+      <div class="conferma_dati">
+        <div class="genera">
+          <button type="button" value="Invia" name="genera" id="genera"> Genera </button>
+        </div>
+        <div class="annulla">
+          <button type="button" name="annulla" id="annulla"> Annulla </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="creazione_biglietto_title">
+      <h2> IL TUO BIGLIETTO </h2>
+    </div>
+    <div class="creazione_biglietto hidden" id="biglietto">
+      <div class="dettaglio_passeggeri_title">
+        <h4>DETTAGLIO PASSEGGERI</h4>
+      </div>
+      <div class="dettaglio_passeggeri">
+        <table class="tabella_passeggeri">
+          <tr>
+            <th id="th_grey">NOME <br> PASSEGGERO</th>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice <br> CP</th>
+            <th>Costo Biglietto</th>
+          </tr>
+          <tr>
+            <td id="nome"></td>
+            <td id="sconto"></td>
+            <td id="carrozza"></td>
+            <td id="codice"></td>
+            <td id="costo"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="js/main.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/df7a7030e8.js" crossorigin="anonymous"></script>
+</body>
+</html>
